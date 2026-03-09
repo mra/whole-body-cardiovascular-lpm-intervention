@@ -17,25 +17,25 @@ In hypotension, vasopressor-like vasoconstriction restores MAP but can reduce re
 From repository root:
 
 ```bash
-python -u code/high_impact_study/run_intervention_study.py \
+python -u code/intervention_study/run_intervention_study.py \
   --n-cycles 101 \
   --tspan 800 \
   --n-samples 20 \
   --uq-n-cycles 41 \
   --uq-tspan 400 \
   --seed 7 \
-  --output-dir code/high_impact_study/output_n20_uq41
+  --output-dir code/intervention_study/output_n20_uq41
 ```
 
 To run full uncertainty at 100 samples:
 
 ```bash
-python -u code/high_impact_study/run_intervention_study.py \
+python -u code/intervention_study/run_intervention_study.py \
   --n-cycles 101 \
   --tspan 800 \
   --n-samples 100 \
   --seed 7 \
-  --output-dir code/high_impact_study/output_n100
+  --output-dir code/intervention_study/output_n100
 ```
 
 ## Outputs
@@ -50,14 +50,14 @@ Use this script to compare candidate final-cycle sampling resolutions (`tspan`) 
 high-resolution reference and recommend the smallest acceptable value.
 
 ```bash
-python -u code/high_impact_study/check_tspan_sensitivity.py \
+python -u code/intervention_study/check_tspan_sensitivity.py \
   --scenario S4 \
   --n-cycles 41 \
   --candidate-tspans 100,200,400,800 \
   --reference-tspan 1600 \
   --n-samples 5 \
   --tol-pct 0.5 \
-  --output-dir code/high_impact_study/tspan_sensitivity_output
+  --output-dir code/intervention_study/tspan_sensitivity_output
 ```
 
 Outputs:
@@ -67,9 +67,9 @@ Outputs:
 
 ## Paper copy edits
 Edited copy files are in:
-- `code/high_impact_study/paper_draft/sn_article.tex`
-- `code/high_impact_study/paper_draft/supp_info.tex`
-- `code/high_impact_study/paper_draft/supp_main.tex`
+- `code/intervention_study/paper_draft/sn_article.tex`
+- `code/intervention_study/paper_draft/supp_info.tex`
+- `code/intervention_study/paper_draft/supp_main.tex`
 
 The new additions are in `paper_draft/sn_article.tex` only:
 - Methods subsection: hypothesis-driven intervention study

@@ -17,14 +17,14 @@ __pycache__/
 # Generated manuscript PDFs
 sn_article.pdf
 supp_main.pdf
-code/high_impact_study/paper_draft/sn_article.pdf
-code/high_impact_study/paper_draft/supp_main.pdf
+code/intervention_study/paper_draft/sn_article.pdf
+code/intervention_study/paper_draft/supp_main.pdf
 
 # Generated study outputs
 code/output/
 code/analysis_outputs/
-code/high_impact_study/output*/
-code/high_impact_study/tspan_sensitivity_output*/
+code/intervention_study/output*/
+code/intervention_study/tspan_sensitivity_output*/
 
 # Exclude manuscript draft copy from code-only public release
-code/high_impact_study/paper_draft/
+code/intervention_study/paper_draft/
