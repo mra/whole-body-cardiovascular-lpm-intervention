@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+
+# Generated manuscript PDFs
+sn_article.pdf
+supp_main.pdf
+code/high_impact_study/paper_draft/sn_article.pdf
+code/high_impact_study/paper_draft/supp_main.pdf
+
+# Generated study outputs
+code/output/
+code/analysis_outputs/
+code/high_impact_study/output*/
+code/high_impact_study/tspan_sensitivity_output*/
+
+# Exclude manuscript draft copy from code-only public release
+code/high_impact_study/paper_draft/
